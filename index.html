@@ -1,74 +1,78 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
-
     <title>J.A.R.V.A</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
-    <body>
-      <div class="site_continer">
-      <header>
-        <div class="top">
-          <div class="box cctv">
-            CCTV
-            <div class="ytplayer_container">
-            <iframe width="395" height="150" src="https://www.youtube.com/embed/xKe6tUsgCy0?autoplay=1&loop=1&playlist=xKe6tUsgCy0" frameborder="0" allowfullscreen ></iframe>
-</div>
-          </div>
+  <body>
+    <div class="site-container">
+      <header class="flexbox">
+        <div class="cctv tile">
+          <a href="https://www.youtube.com/embed/xKe6tUsgCy0?autoplay=1&loop=1&playlist=xKe6tUsgCy0" target="_blank">
+            📹 CCTV 📹
+          </a>
         </div>
 
-        <div class="top-right">
-            <div class="file-system">
-            FILE SYSTEM
-</div>
-          </div>
+        <div class="file-system tile">
+          <ul>
+            <li>Secret Document.pdf</li>
+            <li>Intelligence.pdf</li>
+            <li>Target Co-ordinates.xlsx</li>
+            <li>Schedule.ics</li>
+          </ul>
         </div>
-
       </header>
 
       <main>
-        <div class="layout">
-          <div class="boxo outer">
-            <div class="boxo inner">
-             J.A.R.V.A
+        <div class="main-layout flexbox">
+          <div class="gps tile">
+            <div class="gps-map"></div>
+          </div>
+
+          <div class="jarva">
+            <div class="jarva-outer tile">
+              <div class="jarva-inner">
+                <div class="jarva-name">
+                  J.A.R.V.A
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="flexbox2">
-            <div class="flexy1">
-              I am flexy
-              <div class="image1">
-              <img src="http://screenrant.com/wp-content/uploads/Most-Powerful-Marvel-Villains-List.jpg"
-              alt="enemy one" width=275 height=150>
+
+          <div class="villains">
+            <div class="villain-item">
+              <div class="villain-image">
+                <img src="images/villain-1.jpg" alt="Villain 1">
+              </div>
             </div>
+
+            <div class="villain-item">
+              <div class="villain-image">
+                <img src="images/villain-2.jpg" alt="Villain 2">
+              </div>
             </div>
-            <div class="flexy1">
-              I am flexy
-              <div class="image1">
-              <img src="http://screenrant.com/wp-content/uploads/Doctor-Doom-Marvel-Villains.jpg"
-              alt="enemy one" width=275 height=150>
-            </div>
-            </div>
-            <div class="flexy1">
-              I am flexy
-              <div class="image1">
-              <img src="http://screenrant.com/wp-content/uploads/Annihilus-Marvel-Villains.jpg"
-              alt="enemy one" width=275 height=150>
-            </div>
+
+            <div class="villain-item">
+              <div class="villain-image">
+                <img src="images/villain-3.jpg" alt="Villain 3">
+              </div>
             </div>
           </div>
-
         </div>
       </main>
 
       <footer>
         <div class="flexbox">
-          <div class="flexy">
-            Welcome, my name is J.A.R.V.A
-          </div>
+          <div class="welcome tile">
+            <div class="welcome-message tile-gradient">
+              Welcome, my name is J.A.R.V.A
+            </div>
           </div>
         </div>
       </footer>
     </div>
-    </body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
